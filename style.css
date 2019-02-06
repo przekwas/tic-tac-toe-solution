@@ -1,0 +1,48 @@
+/* simple styling */
+#board {
+    text-align: center;
+    padding: 3em;
+}
+
+/* this selector gets "divs" inside of class "row" */
+/* aka every "cell" on your board */
+.row > div {
+    /* float each "cell" to the left */
+    float: left;
+    /* define each "cell" as a 100x100 block */
+    width: 100px;
+    height: 100px;
+    /* make the font size look good in the cell */
+    line-height: 100px;
+    font-size: 5em;
+    /* makes my mouse into a pointer finger on hovering over each "cell" */
+    cursor: pointer;
+}
+
+.row {
+    /* clear float rule in between each row */
+    clear: both;
+    /* define width of each row */
+    width: 302px;
+    /* center each row */
+    margin: 0 auto;
+}
+
+/* draw borders on the opposite side of each class name */
+/* ie top row needs a bottom border */
+/* bottom needs a top, etc */
+.bottom {
+    border-top: 1px solid black;
+}
+
+.top {
+    border-bottom: 1px solid black;
+}
+
+.left {
+    border-right: 1px solid black;
+}
+
+.right {
+    border-left: 1px solid black;
+}
